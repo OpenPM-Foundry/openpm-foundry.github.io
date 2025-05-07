@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      OpenPM Foundry - Open-Source Project Management for Early-Stage Teams
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+      body {
+        font-family: "Inter", sans-serif;
+      }
+
+      .gradient-text {
+        background: linear-gradient(90deg, #6366f1 0%, #8b5cf6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .hero-section {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-900">
+    <!-- Header/Hero Section - Full Screen Height -->
+    <header class="bg-gray-900 text-white hero-section relative">
+      <div class="absolute top-6 right-6">
+        <a
+          href="https://github.com/openpm-foundry"
+          target="_blank"
+          class="text-gray-400 hover:text-white transition-colors"
+          aria-label="GitHub"
+        >
+          <svg
+            class="w-8 h-8"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.026 2.747-1.026.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+      <div class="container mx-auto px-4 max-w-5xl text-center">
+        <h1 class="text-5xl md:text-6xl font-bold mb-2">
+          Crafting Open-Source
+        </h1>
+        <div class="mb-2">
+          <span class="text-5xl md:text-6xl font-bold text-indigo-400"
+            >Project Management</span
+          >
+        </div>
+        <h1 class="text-5xl md:text-6xl font-bold mb-8">
+          for Early-Stage Teams
+        </h1>
+
+        <p class="text-2xl text-gray-300 mb-10">
+          Join our notification list for early access to
+          <span class="font-semibold">The OpenPM Playbook</span>.
+        </p>
+
+        <div
+          class="flex flex-col sm:flex-row w-full max-w-lg mx-auto gap-3 mb-8"
+        >
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="px-5 py-3 text-lg rounded-md bg-gray-800 border border-gray-700 flex-grow focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          />
+          <button
+            class="px-8 py-3 bg-indigo-600 hover:bg-indigo-700 transition-colors rounded-md font-medium text-lg"
+          >
+            Get Updates
+          </button>
+        </div>
+
+        <a
+          href="#about"
+          class="flex flex-col items-center text-base text-gray-300 hover:text-white transition-colors mt-4"
+        >
+          <span>Scroll to discover more</span>
+          <span class="mt-1 animate-bounce">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 text-gray-400"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 14l-7 7m0 0l-7-7m7 7V3"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </header>
+
+    <!-- What is OpenPM Foundry Section -->
+    <section id="about" class="py-20 bg-white">
+      <div class="container mx-auto px-4 max-w-5xl">
+        <h2 class="text-4xl font-bold mb-10 text-center">
+          What is <span class="gradient-text">OpenPM Foundry</span>?
+        </h2>
+
+        <div class="mb-12">
+          <p class="text-lg mb-4">
+            OpenPM Foundry is a hub for crafting open-source project management
+            tools and playbooks specifically designed for early-stage
+            organizations. We understand the unique challenges that early-stage
+            teams face, and we're building resources to help you succeed.
+          </p>
+          <p class="text-lg">
+            Our playbooks provide actionable guidance for managing tech projects
+            efficiently when resources are limited but ambitions are high.
+          </p>
+        </div>
+
+        <div class="bg-gray-100 p-8 rounded-lg">
+          <h3 class="text-2xl font-semibold mb-6">Key Objectives</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <svg
+                class="w-6 h-6 text-indigo-600 mr-3"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span
+                >Establish best practices for project management in early-stage
+                teams</span
+              >
+            </li>
+            <li class="flex items-start">
+              <svg
+                class="w-6 h-6 text-indigo-600 mr-3"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span
+                >Curate and integrate open-source tools that won't break the
+                bank</span
+              >
+            </li>
+            <li class="flex items-start">
+              <svg
+                class="w-6 h-6 text-indigo-600 mr-3"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span
+                >Foster collaboration within the tech community through shared
+                knowledge</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- What We're Building Section -->
+    <section class="py-20 bg-gray-100">
+      <div class="container mx-auto px-4 max-w-5xl">
+        <h2 class="text-4xl font-bold mb-10 text-center">
+          What We're Building
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- The OpenPM Playbook -->
+          <div class="bg-white p-8 rounded-lg shadow-sm text-center reveal">
+            <div
+              class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <svg
+                class="w-7 h-7 text-blue-600"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">The OpenPM Playbook</h3>
+            <p class="text-gray-600">
+                Comprehensive guides for sprint planning, code management, feasibility analysis, and more—tailored specifically for early-stage teams.
+            </p>
+          </div>
+
+          <!-- Open-Source Tools -->
+          <div class="bg-white p-8 rounded-lg shadow-sm text-center reveal">
+            <div
+              class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <svg
+                class="w-7 h-7 text-purple-600"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Open-Source Tools</h3>
+            <p class="text-gray-600">
+                Curated collection of free and open-source tools to power your project management workflow from ideation to deployment. 
+            </p>
+          </div>
+
+          <!-- Community Resources -->
+          <div class="bg-white p-8 rounded-lg shadow-sm text-center reveal">
+            <div
+              class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <svg
+                class="w-7 h-7 text-pink-600"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Community Resources</h3>
+            <p class="text-gray-600">
+                Templates, examples, and best practices contributed by a community of builders who've been in your shoes. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The OpenPM Playbook Roadmap Section -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4 max-w-5xl">
+        <h2 class="text-4xl font-bold mb-4 text-center">
+          The <span class="gradient-text">OpenPM Playbook</span>
+        </h2>
+        <h3 class="text-2xl font-medium mb-6 text-center text-gray-700">
+          Development Roadmap
+        </h3>
+
+        <p class="text-xl text-center mb-12 max-w-3xl mx-auto">
+          The OpenPM Playbook is a step-by-step guide that outlines best
+          practices and tools for managing projects in early-stage tech
+          companies.
+        </p>
+
+        <div class="space-y-8 max-w-4xl mx-auto">
+          <!-- Current Focus Areas -->
+          <div class="bg-gray-100 p-8 rounded-lg">
+            <div class="flex items-start">
+              <div
+                class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold mr-6 mt-1 flex-shrink-0"
+              >
+                1
+              </div>
+              <div>
+                <h3 class="text-2xl font-medium mb-4">Current Focus Areas</h3>
+                <ul class="space-y-3 text-gray-700">
+                  <li class="flex items-center">
+                    <svg
+                      class="w-5 h-5 text-blue-600 mr-2 flex-shrink-0"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <span>Guidelines for "The Vibe Coders"</span>
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      class="w-5 h-5 text-blue-600 mr-2 flex-shrink-0"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <span>Source Code Management</span>
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      class="w-5 h-5 text-blue-600 mr-2 flex-shrink-0"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <span>Sprint Planning Guidelines</span>
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      class="w-5 h-5 text-blue-600 mr-2 flex-shrink-0"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <span>Feasibility Analysis and Effort Estimation</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Next Phase -->
+          <div class="bg-gray-100 p-8 rounded-lg">
+            <div class="flex items-start">
+              <div
+                class="w-10 h-10 bg-purple-600 text-white rounded-full flex items-center justify-center text-xl font-bold mr-6 mt-1 flex-shrink-0"
+              >
+                2
+              </div>
+              <div>
+                <h3 class="text-2xl font-medium mb-4">Next Phase</h3>
+                <ul class="space-y-3 text-gray-700">
+                  <li class="flex items-center">
+                    <svg
+                      class="w-5 h-5 text-purple-600 mr-2 flex-shrink-0"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <span>AI Tools for Development</span>
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      class="w-5 h-5 text-purple-600 mr-2 flex-shrink-0"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <span>Open-Source Tools Directory</span>
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      class="w-5 h-5 text-purple-600 mr-2 flex-shrink-0"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <span>Deployment Best Practices</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Future Enhancements -->
+          <div class="bg-gray-100 p-8 rounded-lg">
+            <div class="flex items-start">
+              <div
+                class="w-10 h-10 bg-pink-600 text-white rounded-full flex items-center justify-center text-xl font-bold mr-6 mt-1 flex-shrink-0"
+              >
+                3
+              </div>
+              <div>
+                <h3 class="text-2xl font-medium mb-4">Future Enhancements</h3>
+                <ul class="space-y-3 text-gray-700">
+                  <li class="flex items-center">
+                    <svg
+                      class="w-5 h-5 text-pink-600 mr-2 flex-shrink-0"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zm7-10a1 1 0 01.707.293l.707.707L15.414 4a1 1 0 011.414 1.414L15.414 7l1.414 1.414a1 1 0 01-1.414 1.414L13.707 8.121l-.707.707a1 1 0 01-1.414-1.414l.707-.707-1.414-1.414a1 1 0 011.414-1.414L13.707 4.414l.707-.707A1 1 0 0112 2z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <span>Developer Hiring Guide</span>
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      class="w-5 h-5 text-pink-600 mr-2 flex-shrink-0"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zm7-10a1 1 0 01.707.293l.707.707L15.414 4a1 1 0 011.414 1.414L15.414 7l1.414 1.414a1 1 0 01-1.414 1.414L13.707 8.121l-.707.707a1 1 0 01-1.414-1.414l.707-.707-1.414-1.414a1 1 0 011.414-1.414L13.707 4.414l.707-.707A1 1 0 0112 2z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <span>Application Security Cheat Sheet</span>
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      class="w-5 h-5 text-pink-600 mr-2 flex-shrink-0"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zm7-10a1 1 0 01.707.293l.707.707L15.414 4a1 1 0 011.414 1.414L15.414 7l1.414 1.414a1 1 0 01-1.414 1.414L13.707 8.121l-.707.707a1 1 0 01-1.414-1.414l.707-.707-1.414-1.414a1 1 0 011.414-1.414L13.707 4.414l.707-.707A1 1 0 0112 2z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <span>Community Case Studies</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gray-900 text-white">
+      <div class="container mx-auto px-4 max-w-5xl text-center">
+        <h2 class="text-4xl font-bold mb-6">
+          Get Access to <span class="text-indigo-400">The OpenPM Playbook</span>
+        </h2>
+
+        <p class="text-xl text-gray-300 mb-10 max-w-3xl mx-auto">
+          Join our notification list to receive updates as we publish each
+          section of the OpenPM Playbook.
+        </p>
+
+        <div
+          class="flex flex-col sm:flex-row w-full max-w-lg mx-auto gap-3 mb-3"
+        >
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="px-5 py-3 text-lg rounded-md bg-gray-800 border border-gray-700 flex-grow focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          />
+          <button
+            class="px-8 py-3 bg-indigo-600 hover:bg-indigo-700 transition-colors rounded-md font-medium text-lg"
+          >
+            Get Updates
+          </button>
+        </div>
+        <p class="text-base text-gray-400">No spam. Only important updates.</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 bg-white border-t border-gray-200">
+      <div class="container mx-auto px-4 max-w-5xl">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-4 md:mb-0">
+            <p class="font-semibold text-lg text-gray-900">OpenPM Foundry</p>
+            <p class="text-base text-gray-500">
+              © 2025 OpenPM Foundry. All rights reserved.
+            </p>
+          </div>
+
+          <div class="flex space-x-4">
+            <a
+              href="https://github.com/openpm-foundry"
+              class="text-gray-500 hover:text-gray-900 transition-colors"
+              target="_blank"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.026 2.747-1.026.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+      // Smooth scrolling
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      // Form handling
+      const buttons = document.querySelectorAll("button");
+      buttons.forEach((button) => {
+        button.addEventListener("click", function () {
+          const input = this.previousElementSibling;
+          if (input && input.tagName === "INPUT" && input.type === "email") {
+            if (input.value) {
+              alert(
+                "Thank you! You will receive updates about The OpenPM Playbook as sections are published."
+              );
+              input.value = "";
+            } else {
+              input.focus();
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
